@@ -6,13 +6,15 @@ class Button {
   final int fontSize;
   final int padding;
 
-  Button(
-      {required this.toDoText,
-      required this.width,
+  Button(this.toDoText,
+      {required this.width,
       required this.height,
       required this.radius,
       required this.fontSize,
       required this.padding});
 }
 
-void main() {}
+void main() {
+  Button b = Button("In den Warenkorb",
+      width: 96, height: 32, radius: 4, fontSize: 14, padding: 8);
+}
