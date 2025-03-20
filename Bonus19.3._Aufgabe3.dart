@@ -12,6 +12,11 @@ class Rectangle {
   double AereaResult() {
     return (longSideLenghtX * shortSideLengthY);
   }
+
+  double ScopeFactorResult(int factor) {
+    return ((2 * (longSideLenghtX * factor)) +
+        (2 * (shortSideLengthY * factor)));
+  }
 }
 
 void main() {
