@@ -15,7 +15,7 @@ class Rectangle {
 }
 
 void main() {
-  Rectangle instanz1 = Rectangle(longSideLenghtX: 4.5, shortSideLengthY: 7);
+  Rectangle instanz1 = Rectangle(longSideLenghtX: 4.5, shortSideLengthY: 7.5);
 
   print(instanz1.AereaResult());
   print(instanz1.ScopeResult());
