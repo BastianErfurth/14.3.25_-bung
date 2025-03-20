@@ -17,16 +17,23 @@ class Rectangle {
     return ((2 * (longSideLenghtX * factor)) +
         (2 * (shortSideLengthY * factor)));
   }
+
+  double AereaFactorResult(int factor2) {
+    return ((longSideLenghtX * factor2) * (shortSideLengthY * factor2));
+  }
 }
 
 void main() {
-  Rectangle instanz1 = Rectangle(longSideLenghtX: 4.5, shortSideLengthY: 7.5);
+  Rectangle instanz1 = Rectangle(longSideLenghtX: 4, shortSideLengthY: 5);
 
   print(instanz1.AereaResult());
   print(instanz1.ScopeResult());
 
-  instanz1.longSideLenghtX = 5;
+  instanz1.longSideLenghtX = 6;
 
   print(instanz1.AereaResult());
   print(instanz1.ScopeResult());
+
+  print(instanz1.ScopeFactorResult(2));
+  print(instanz1.AereaFactorResult(3));
 }
